@@ -161,11 +161,11 @@ export default function LoginDialog({ open, setOpen }) {
                             <TextField variant="standard" onChange={(e) => onValueChange(e)} name='username' label='Enter Email/Mobile number' />
                             { error && <Error>Please enter valid Email ID/Mobile number</Error> }
                             <TextField variant="standard" onChange={(e) => onValueChange(e)} name='password' label='Enter Password' />
-                            <Text>By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</Text>
+                            <Text>By continuing, you agree to Ezshop's Terms of Use and Privacy Policy.</Text>
                             <LoginButton onClick={() => loginUser()} >Login</LoginButton>
                             <Text style={{textAlign:'center'}}>OR</Text>
                             <RequestOTP>Request OTP</RequestOTP>
-                            <CreateAccount onClick={toggleSignup}>New to Flipkart? Create an account</CreateAccount>
+                            <CreateAccount onClick={toggleSignup}>New to Ezshop? Create an account</CreateAccount>
                         </Wrapper> : 
                         <Wrapper>
                             <TextField variant="standard" onChange={(e) => onInputChange(e)} name='firstname' label='Enter Firstname' />

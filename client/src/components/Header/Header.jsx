@@ -47,7 +47,7 @@ const CustomButtonWrapper = styled('span')(({ theme }) => ({
 }));
 
 const Header = () => {
-    const logoURL = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png';
+    const logoURL = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/Ezshop-plus_8d85f4.png';
     const subURL = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png';
 
     const [open, setOpen] = useState(false);
@@ -86,7 +86,8 @@ const Header = () => {
                 </Drawer>
 
                 <Component to='/'>
-                    <img src={logoURL} style={{ width: 75 }} />
+                    {/* <img src={logoURL} style={{ width: 75 }} /> */}
+                    <h3 style={{width:75}}>EzShop</h3>
                     <Box component="span" style={{ display: 'flex' }}>
                         <SubHeading>Explore&nbsp;
                             <Box component="span" style={{color:'#FFE500'}}>

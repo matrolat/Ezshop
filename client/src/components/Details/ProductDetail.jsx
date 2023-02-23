@@ -34,7 +34,7 @@ const ProductDetail = ({ product }) => {
         <>
             <Typography>Available offers</Typography>
             <SmallText>
-                <Typography><StyledBadge />Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card</Typography>
+                <Typography><StyledBadge />Bank Offer 5% Unlimited Cashback on Ezshop Axis Bank Credit Card</Typography>
                 <Typography><StyledBadge />Bank Offer 10% Off on Bank of Baroda Mastercard debit card first time transaction, Terms and Condition apply</Typography>
                 <Typography><StyledBadge />Purchase this Furniture or Appliance and Get Extra ₹500 Off on Select ACs</Typography>
                 <Typography><StyledBadge />Partner OfferExtra 10% off upto ₹500 on next furniture purchase</Typography>
