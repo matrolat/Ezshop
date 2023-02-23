@@ -1,18 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/Header/Header';
-import Home from './components/Home/Home';
-import {Box} from '@mui/material'
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
+import { Box } from "@mui/material";
+import DataProvider from "./context/DataProvider";
+import { BrowserRouter, Routes,Route } from "react-router-dom";
+import  DetailView  from "./components/Details/DetailView";
+import {Cart} from "./components/Cart/Cart";
 function App() {
   return (
-    <div>
-      <Header/>
-      
-      <Box style={{marginTop:54}}>
-      <Home/>
+    <DataProvider>
+      <BrowserRouter>
+        <Header />
 
-      </Box>
-    </div>
+        <Box style={{ marginTop: 54 }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/product/:id" element={<DetailView/>} />
+            <Route path="/cart" element={<Cart/>} />
+          </Routes>
+        </Box>
+      </BrowserRouter>
+    </DataProvider>
   );
 }
 
