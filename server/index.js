@@ -21,4 +21,4 @@ const PORT = 8000;
 
 connection();
 app.listen(PORT, () => console.log(`Server is running successfully on PORT ${PORT}`));
-// DefaultData();
+DefaultData();
